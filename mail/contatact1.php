@@ -36,3 +36,4 @@ if(!$mail->send()) {
 } else {
     header('Location: index.php?enviado');
 }
+
