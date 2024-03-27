@@ -4,7 +4,7 @@
  *
  */
 
-$id = 5;
+$id = $_GET['id'];
 try {
     $conn = new PDO('mysql:host=localhost;dbname=meuBancoDeDados', $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
