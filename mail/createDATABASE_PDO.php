@@ -1,6 +1,6 @@
 <?php
 
-$servername = "localhost";
+$servername = "localhost100";
 $username = "username";
 $password = "password";
 $dbname = "myDBPDO";
