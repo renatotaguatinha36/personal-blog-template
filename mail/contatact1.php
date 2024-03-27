@@ -7,7 +7,7 @@ require 'mailer/PHPMailerAutoload.php';
 if(isset($_POST['assunto']) && !empty($_POST['assunto'])) {
     $assunto = $_POST['assunto'];
 }
-if (isset($_POST['mensagem']) && !empty($_POST['mensagem'])) {
+if(isset($_POST['mensagem']) && !empty($_POST['mensagem'])) {
     $mensagem = $_POST['mensagem'];
 }
 
