@@ -11,9 +11,10 @@ try {
     
 
     $stmt = $conn->prepare('SELECT * FROM minhaTabela WHERE id = :id');
+    $stmt->setFetchMode(PDO::FETCH_ASSOC);  
     $stmt->execute(array('id' => $id));
 
-    while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+    while($row = $stmt->fetch()) {
         print_r($row);
     }
 } catch(PDOException $e) {
